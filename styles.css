@@ -7,13 +7,18 @@
   background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
 
+.imagen_contacto{
+   width: 300px;
+}
+
 .titulo{
     top: 10px;
     border-style: border-box;
     background-color: rgb(158, 173, 185);
-    font-size: 40px;
+    font-size: 2em;
     border-style: dotted;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     left: 2.7cm;
     position: relative;
     margin-left: 120px;
@@ -22,7 +27,7 @@
 
 .titulo:hover{
     background-color: #a8eb12;
-transition: color 5s;
+   ransition: color 5s;
 }
 
 body{
@@ -41,8 +46,8 @@ span{
     border-width: 200px;
     padding: 7px;
     content: 40px;
-    font-size: 30px;
-    display: inline-block;
+   /* font-size: 30px;*/
+    display: flex;
     background-color:  rgb(158, 173, 185);
 } 
 
@@ -74,7 +79,7 @@ span{
  }
 
 .lista .titulo__lista{
-    font-size: 20px;
+    /*font-size: 20px;*/
     font-family:Arial, Helvetica, sans-serif;
     border: solid;
     background-color: rgb(170, 192, 197);
@@ -86,13 +91,13 @@ span{
 
   }
 
-  .parrafo{
+  /*.parrafo{
    font-family: 'Times New Roman', Times, serif;
    font-size: 50px;
-   display: inline-block;
-   width: 50px;
+  /* display: inline-block;*/
+ /*  width: 50px;
    text-align: justify;
-}
+}*/
 
 a:hover{
     color: rgb(24, 125, 150);
@@ -108,10 +113,6 @@ a:hover{
    }  
 
 
-.imagen__preinscripcion{
-  display: inline-block;
-}  
-
 
 .titulo__lista{  
     display: inline-block;
@@ -126,3 +127,360 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: justify;
  }
  
+ header {
+    grid-area: header;
+ }
+
+ footer {
+    grid-area: footer;
+   /* background-color: aqua;*/
+ }
+
+ nav {
+    grid-area: nav;     
+    font-size: 1.5em;
+   /* background-color: #a8eb12;*/
+ }
+
+ .imagen {
+    grid-area: imagen;     
+ }
+
+ .parrafo {
+    grid-area: parrafo;     
+ }
+
+ .escuela{
+   text-align:center;
+}
+
+ .lista {
+    grid-area: lista;     
+ }
+
+ picture {
+    grid-area: picture;     
+ }
+
+ .lista_autoridades {
+   grid-area: lista_autoridades;   
+  /* background-color: #a8eb12;*/
+  
+}
+
+.imagen_autoridades {
+   grid-area: imagen_autoridades;     
+}
+
+.table {
+   grid-area: table;     
+   /*background-color: blue;*/
+}
+
+iframe {
+   grid-area: iframe;     
+   /*background-color: blue;*/
+}
+
+.titulo1 {
+   grid-area: titulo1;     
+   border-width: 10cm;
+   align-items: center;
+   background-color: rgb(86, 90, 102);
+}
+
+.titulo2 {
+   grid-area: titulo2;     
+   background-color: rgb(86, 90, 102);
+}
+
+.titulo3 {
+   grid-area: titulo3;     
+   background-color: rgb(86, 90, 102);
+}
+
+.titulo4 {
+   grid-area: titulo4;     
+   background-color: rgb(86, 90, 102);
+
+}
+
+.titulo5 {
+   grid-area: titulo5;     
+   background-color: rgb(86, 90, 102);
+}
+
+
+.renglon1 {
+   grid-area: renglon1;     
+   background-color: rgb(65, 140, 158);
+}
+
+.renglon2 {
+   grid-area: renglon2;     
+   background-color: rgb(65, 140, 158);
+}
+.renglon3 {
+   grid-area: renglon3;     
+   background-color: rgb(65, 140, 158);
+}
+.renglon4 {
+   grid-area: renglon4;     
+   background-color: rgb(65, 140, 158);
+}
+.renglon5 {
+   grid-area: renglon5;     
+   background-color: rgb(65, 140, 158);
+}
+
+ .grid{
+    display: grid;
+    grid-template-areas:
+     "header"
+     "nav"
+     "picture"
+     "footer";
+   /* grid-template-rows: 1fr 10fr 1fr 10fr; */
+   grid-template-rows: 50px 30px 30px 30px;
+  /* grid-template-columns: 1fr;*/
+   grid-template-columns: 70em;
+   grid-row-gap: 10px;
+   grid-column-gap: 10px;
+  /* height: 100vh;*/
+   margin: 0;	 
+  /* font-size: 1em;*/
+ }
+
+ 
+
+ .grid2{
+    display: grid;
+    grid-template-areas:
+     "header"
+     "nav"
+     "parrafo"
+     "imagen_escuela"
+     "footer2"
+     ;
+   /* grid-template-rows: 1fr 10fr 1fr 10fr; */
+   grid-template-rows: 50px 50px 290px 1fr 1fr;
+   grid-template-columns:  1fr;
+   grid-row-gap: 10px;
+   grid-column-gap: 10px;
+  /* height: 100vh;*/
+   margin: 0;	 
+ }
+
+
+ .grid3{
+    display: grid;
+    grid-template-areas:
+     "header header"
+     "nav nav"
+     "lista_autoridades imagen_autoridades"
+     "footer footer"
+     ;
+   /* grid-template-rows: 1fr 10fr 1fr 10fr; */
+   grid-template-rows: 1fr 2fr 200px 1fr ;
+   grid-template-columns:  1fr 3fr ;
+  /* grid-row-gap: 10px;
+   grid-column-gap: 10px;
+  /* height: 100vh;*/
+   /*margin: 0;	 */
+ }
+
+ .grid4{
+   display: grid;
+   grid-template-areas:
+    "header header header header header header"
+    "nav nav nav nav nav nav"
+    "titulo1 titulo2 titulo3 titulo4 titulo5 imagen_academico"
+    "renglon1 renglon2 renglon3 renglon4 renglon5 imagen_academico"
+    "iframe iframe iframe iframe iframe iframe"
+    "footer footer footer footer footer footer"
+    ;
+  /* grid-template-rows: 1fr 10fr 1fr 10fr; */
+  grid-template-rows: 50px 1fr 30px 40px auto auto;
+  grid-template-columns:  2fr 2fr 1fr 1fr 2fr 2fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  /* height: 100vh;*/
+  margin: 0;	
+}
+
+.imagen_autoridades{
+  /* width: 200px;*/
+  width:20rem;
+}
+
+.imagen_contacto{
+   /* width: 200px;*/
+   width:20rem;
+ }
+
+.imagen_academico{
+ /*  width: 200px;*/
+ width:12rem;
+}
+
+
+.imagen__preinscripcion {
+   grid-area: imagen__preinscripcion;     
+}
+
+.preinscripcion {
+   grid-area: preinscripcion;     
+}
+
+.grid5{
+   display: grid;
+   grid-template-areas:
+    "header header"
+    "nav nav"
+    "preinscripcion  imagen__preinscripcion"
+    "footer footer"
+    ;
+  /* grid-template-rows: 1fr 10fr 1fr 10fr; */
+  grid-template-rows: 55px 3fr 200px 1fr ;
+  grid-template-columns:  1fr 1fr ;
+ /* grid-row-gap: 10px;
+  grid-column-gap: 10px;
+ /* height: 100vh;*/
+  /*margin: 0;	 */
+}
+
+.imagen__preinscripcion{
+   width: 20rem;
+}
+
+
+.grid6{
+   display: grid;
+   grid-template-areas:
+    "header header"
+    "nav nav"
+    "formulario  imagen_contacto"
+    "footer footer"
+    ;
+  /* grid-template-rows: 1fr 10fr 1fr 10fr; */
+  grid-template-rows: 55px 3fr 350px 1fr ;
+  grid-template-columns:  1fr 1fr ;
+ /* grid-row-gap: 10px;
+  grid-column-gap: 10px;
+ /* height: 100vh;*/
+  /*margin: 0;	 */
+}
+
+.imagen_contacto{
+   width: 150px;
+}
+
+ #inicio{
+ display: inline-flex;
+ flex-direction: row;
+}
+
+.parrafo{
+   /*background-color: #a8eb12;*/
+   font-size: 1em;
+   text-align: justify;
+}
+
+@media screen and (max-width: 768px){
+   .grid{
+      grid-template-columns: 0.4fr;
+      font-size: .48em;
+   }
+
+   .imagen_inicio{
+      background-color: #051937;
+     width:400px;
+   }
+
+   .imagen_escuela{
+      margin-top: 10px;
+      /*width: 250px;*/
+      width: 20rem;
+   }
+
+   .imagen_autoridades{
+      width:5rem;
+   }
+
+   .imagen_academico{
+     /* height: 70px;
+      width: 70px;*/
+      width: 8rem;
+   }
+
+   .imagen__preinscripcion{
+      width: 10rem;
+   }
+
+   .imagen_contacto{
+      /* width: 200px;*/
+      width:5rem;
+    }
+
+   .grid2{
+      grid-template-columns: .05fr;
+      font-size: .48em;
+   }
+
+   .parrafo{
+       /*background-color: #a8eb12;*/
+       font-size: 2em;
+       text-align: justify;
+    }
+
+
+   .grid3{
+      grid-template-columns: 1fr 0.4fr;
+      font-size: .48em;
+   }
+
+   .lista_autoridades{
+      font-size: 1.5em;
+   }
+
+   .grid4{
+      grid-template-columns: 0.8fr 0.8fr;
+      font-size: .48em;
+   }
+
+   .grid5{
+     /* grid-template-columns: 0.8fr 0.8fr;*/
+      grid-template-columns:  1fr 1fr ;
+      grid-column-gap: 0.1px;
+      font-size: .48em;
+   }
+
+   .preinscripcion{
+      font-size: 1.2em;
+   }
+
+   .escuela{
+      text-align: justify;
+      font-size: 0.2em;
+   }
+
+   .parrafo{
+      text-align: justify;
+      font-size: 1.5em;
+      padding: 20px;
+   }
+
+   .grid6{
+      grid-template-columns: 2fr 0.8fr;
+      grid-template-rows: 55px 2fr 300px 500px ;
+      font-size: .47em;
+   }
+
+   .formulario{
+      font-size: 1.2em;
+   }
+
+ }
+ 
+
+}
