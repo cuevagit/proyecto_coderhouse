@@ -1,0 +1,128 @@
+*{
+    border-style: border-box;
+   /* background-color: rgb(181, 181, 197);*/
+}
+
+:root{
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+.titulo{
+    top: 10px;
+    border-style: border-box;
+    background-color: rgb(158, 173, 185);
+    font-size: 40px;
+    border-style: dotted;
+    display: inline-block;
+    left: 2.7cm;
+    position: relative;
+    margin-left: 120px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.titulo:hover{
+    background-color: #a8eb12;
+transition: color 5s;
+}
+
+body{
+   background-color: rgb(158, 173, 185);
+   /*display: flex;*/
+   min-height: 100vh;
+}
+
+span{
+    background-color: rgb(74, 92, 32);
+}
+
+.lista{
+    /*position: fixed;*/
+    margin-left: 10px;
+    border-width: 200px;
+    padding: 7px;
+    content: 40px;
+    font-size: 30px;
+    display: inline-block;
+    background-color:  rgb(158, 173, 185);
+} 
+
+.lista__item{ 
+ /*position: fixed;*/
+/* border-width: 100px; */
+ /*font-size: 20px;*/
+ display: inline-block;
+ padding: 7px;
+ /*background-color:  rgb(154, 174, 202);*/
+} 
+
+.logo{
+    top: 19px;
+    position: absolute;
+    width: "100px";
+    /*height: "50px";*/
+    margin-left: 120px;
+}
+
+.imagen{
+  /*display: inline;*/
+  margin-top: 20px;
+  margin-left: 60px;
+  padding: 1px;
+  position: relative;
+  display: inline-block;
+ /* text-align: center;*/
+ }
+
+.lista .titulo__lista{
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    border: solid;
+    background-color: rgb(170, 192, 197);
+    padding:  17px 17px 17px;
+    padding-left: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+    display: inline-block;
+
+  }
+
+  .parrafo{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 50px;
+   display: inline-block;
+   width: 50px;
+   text-align: justify;
+}
+
+a:hover{
+    color: rgb(24, 125, 150);
+}  
+    
+
+.titulo_chico{
+ display: inline-block;
+}  
+
+.formulario{
+    display: inline-block;
+   }  
+
+
+.imagen__preinscripcion{
+  display: inline-block;
+}  
+
+
+.titulo__lista{  
+    display: inline-block;
+}  
+
+
+.parrafo_reducido{  
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}  
+
+.texto{
+    text-align: justify;
+ }
+ 
