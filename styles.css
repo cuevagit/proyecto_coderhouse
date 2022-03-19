@@ -301,7 +301,7 @@ iframe {
     ;
   /* grid-template-rows: 1fr 10fr 1fr 10fr; */
   grid-template-rows: 50px 1fr 30px 40px auto auto;
-  grid-template-columns:  2fr 2fr 1fr 1fr 2fr 2fr;
+  grid-template-columns:  2fr 2fr 2fr 2fr 2fr 2fr;
   grid-row-gap: 10px;
   grid-column-gap: 10px;
   /* height: 100vh;*/
@@ -444,7 +444,7 @@ iframe {
    }
 
    .grid4{
-      grid-template-columns: 0.8fr 0.8fr;
+    /*  grid-template-columns: 0.8fr 0.8fr;*/
       font-size: .48em;
    }
 
