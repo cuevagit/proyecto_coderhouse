@@ -1,20 +1,28 @@
 *{
     border-style: border-box;
+    /*background-image: linear-gradient(to right top, #8f9ea5, #004d7a, #008793, #00bf72, #a8eb12) !important;*/
    /* background-color: rgb(181, 181, 197);*/
 }
 
-:root{
-  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+body{
+   background-image: linear-gradient(to right top, #8f9ea5, #004d7a, #008793, #00bf72, #a8eb12) !important;
 }
 
 .imagen_contacto{
    width: 300px;
 }
 
+a{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: 1000;
+   color:aquamarine;
+}
+
+
 .titulo{
     top: 10px;
     border-style: border-box;
-    background-color: rgb(158, 173, 185);
+    /*background-color: rgb(158, 173, 185);*/
     font-size: 2em;
     border-style: dotted;
     display: flex;
@@ -26,19 +34,19 @@
 }
 
 .titulo:hover{
-    background-color: #a8eb12;
-   ransition: color 5s;
+    background-color: #12ebc7;
+    transition: color 5s;
 }
 
 body{
-   background-color: rgb(158, 173, 185);
+   /*background-color: rgb(158, 173, 185);*/
    /*display: flex;*/
    min-height: 100vh;
 }
 
-span{
-    background-color: rgb(74, 92, 32);
-}
+/*span{
+   /* background-color: rgb(74, 92, 32);
+}*/
 
 .lista{
     /*position: fixed;*/
@@ -48,7 +56,7 @@ span{
     content: 40px;
    /* font-size: 30px;*/
     display: flex;
-    background-color:  rgb(158, 173, 185);
+   /* background-color:  rgb(158, 173, 185);*/
 } 
 
 .lista__item{ 
@@ -82,7 +90,7 @@ span{
     /*font-size: 20px;*/
     font-family:Arial, Helvetica, sans-serif;
     border: solid;
-    background-color: rgb(170, 192, 197);
+    /*background-color: rgb(170, 192, 197);*/
     padding:  17px 17px 17px;
     padding-left: 30px;
     margin-top: 5px;
@@ -100,7 +108,7 @@ span{
 }*/
 
 a:hover{
-    color: rgb(24, 125, 150);
+    color: rgb(24, 79, 150);
 }  
     
 
@@ -133,7 +141,6 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
  footer {
     grid-area: footer;
-   /* background-color: aqua;*/
  }
 
  nav {
@@ -186,7 +193,7 @@ iframe {
    grid-area: titulo1;     
    border-width: 10cm;
    align-items: center;
-   background-color: rgb(86, 90, 102);
+   background-color: rgb(97, 86, 102);
 }
 
 .titulo2 {
@@ -483,4 +490,3 @@ iframe {
  }
  
 
-}
