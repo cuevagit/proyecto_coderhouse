@@ -1,0 +1,10 @@
+* {
+  border-style: border-box;
+  /*background-image: linear-gradient(to right top, #8f9ea5, #004d7a, #008793, #00bf72, #a8eb12) !important;*/
+  /* background-color: rgb(181, 181, 197);*/ }
+
+body {
+  background-image: linear-gradient(to right top, #8f9ea5, #004d7a, #008793, #00bf72, #a8eb12) !important; }
+
+.imagen_contacto {
+  width: 300px; }
