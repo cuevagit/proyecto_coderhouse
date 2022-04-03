@@ -1,0 +1,45 @@
+a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 1000;
+    color:aquamarine;
+ }
+
+ .titulo{
+    top: 10px;
+    border-style: border-box;
+    /*background-color: rgb(158, 173, 185);*/
+    font-size: 2em;
+    border-style: dotted;
+    display: flex;
+    flex-direction: row;
+    left: 2.7cm;
+    position: relative;
+    margin-left: 120px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    &:hover{
+        background-color: #12ebc7;
+        transition: color 5s;
+    }
+
+}
+
+
+
+.logo{
+    top: 11px;
+    position: absolute;
+    width: "100px";
+    /*height: "50px";*/
+    margin-left: 120px;
+}
+
+
+#inicio{
+    display: inline-flex;
+    flex-direction: row;
+}
+
+header {
+    grid-area: header;
+ }

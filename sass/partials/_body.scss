@@ -1,0 +1,12 @@
+body{
+    /*background-color: rgb(158, 173, 185);*/
+    /*display: flex;*/
+    min-height: 100vh;
+ }
+
+ @media screen and (max-width: 768px){
+
+ .navbar{
+    background-color: #00bf72;
+  }
+}

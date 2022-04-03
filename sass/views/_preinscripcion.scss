@@ -1,0 +1,56 @@
+.imagen{
+   /*display: inline;*/
+   margin-top: 20px;
+   margin-left: 60px;
+   padding: 1px;
+   position: relative;
+   display: inline-block;
+  /* text-align: center;*/
+
+         &__preinscripcion {
+           width: 20rem;
+           grid-area: imagen__preinscripcion;     
+        }
+
+  }
+
+
+ .preinscripcion {
+    grid-area: preinscripcion;     
+ }
+
+ .grid5{
+    display: grid;
+    grid-template-areas:
+     "header header"
+    /* "nav nav"
+     "preinscripcion  imagen__preinscripcion"
+     "footer footer"*/
+     ;
+   grid-template-rows: 55px  25px; /* 0.2px 1px ;*/
+   grid-template-columns:  1fr 1fr ;
+ }
+
+ .parrafo_reducido{  
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }  
+
+  @media screen and (max-width: 768px){
+
+  .imagen__preinscripcion{
+   width: 10rem;
+ }
+
+ .grid5{
+   /* grid-template-columns: 0.8fr 0.8fr;*/
+    grid-template-columns:  1fr 1fr ;
+    grid-column-gap: 0.1px;
+    font-size: .48em;
+ }
+
+ .preinscripcion{
+    font-size: 1.2em;
+ }
+
+ 
+}
