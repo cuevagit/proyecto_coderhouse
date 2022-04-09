@@ -1,8 +1,7 @@
 .imagen{
     /*display: inline;*/
-    margin-top: 20px;
-    margin-left: 60px;
-    padding: 1px;
+    @include margins(20px, 60px);
+    padding: map-get($styles, padding1);
     position: relative;
     display: inline-block;
    /* text-align: center;*/
@@ -12,7 +11,13 @@
     /*background-color: #a8eb12;*/
     font-size: 1em;
     text-align: justify;
-    grid-area: parrafo;     
+    grid-area: parrafo;   
+    
+    .escuela{
+      @extend .parrafo;
+      text-align:center;
+   }
+
  }
 
  .grid2{
@@ -33,16 +38,15 @@
    margin: 0;	
  }
 
- .escuela{
-    text-align:center;
+ #inicio{
+   @include flex-row-center(flex, row, left);
  }
-
 
  @media screen and (max-width: 768px){
 
  .imagen_escuela{
    margin-top: 10px;
-   width: 20rem;
+   width: map-get($styles, ancho3);
 }
 
 .grid2{

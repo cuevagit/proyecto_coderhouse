@@ -4,17 +4,21 @@
    /* background-color: rgb(181, 181, 197);*/
 }
 
+#inicio{
+  @include flex-row-center(flex, row, left);
+}
+
 .imagen{
     /*display: inline;*/
-    margin-top: 20px;
-    margin-left: 60px;
-    padding: 1px;
+    @include margins(20px, 60px);
+    padding: map-get($styles, padding1);
     position: relative;
     display: inline-block;
    /* text-align: center;*/
 
      &_academico{
-        width:12rem;
+      /*@extend .imagen;*/
+      width: map-get($styles, ancho);
      }
 
    }
@@ -29,53 +33,65 @@ iframe {
 
  .titulo1 {
     grid-area: titulo1;     
-    border-width: 10cm;
-    align-items: center;
-    background-color: rgb(97, 86, 102);
+    border-width: map-get($styles, borde);
+    /*border-width: 10cm;*/
+    align-items: map-get($styles, centro);
+    /*align-items: center;*/
+    background-color: map-get($styles, color);
+    /*background-color: rgb(97, 86, 102);*/
  }
  
  .titulo2 {
     grid-area: titulo2;     
-    background-color: rgb(86, 90, 102);
+    background-color: map-get($styles, color);
+    /*background-color: rgb(86, 90, 102);*/
  }
  
  .titulo3 {
     grid-area: titulo3;     
-    background-color: rgb(86, 90, 102);
+    background-color: map-get($styles, color);
+    /*background-color: rgb(86, 90, 102);*/
  }
  
  .titulo4 {
-    grid-area: titulo4;     
-    background-color: rgb(86, 90, 102);
+    grid-area: titulo4;
+    background-color: map-get($styles, color);     
+    /*background-color: rgb(86, 90, 102);*/
  
  }
  
  .titulo5 {
     grid-area: titulo5;     
-    background-color: rgb(86, 90, 102);
+    background-color: map-get($styles, color);
+    /*background-color: rgb(86, 90, 102);*/
  }
  
  
  .renglon1 {
-    grid-area: renglon1;     
-    background-color: rgb(65, 140, 158);
+    grid-area: renglon1;    
+    background-color: map-get($styles, color2); 
+    /*background-color: rgb(65, 140, 158);*/
  }
  
  .renglon2 {
     grid-area: renglon2;     
-    background-color: rgb(65, 140, 158);
+    background-color: map-get($styles, color2);
+   /* background-color: rgb(65, 140, 158);*/
  }
  .renglon3 {
     grid-area: renglon3;     
-    background-color: rgb(65, 140, 158);
+    background-color: map-get($styles, color2);
+    /*background-color: rgb(65, 140, 158);*/
  }
  .renglon4 {
-    grid-area: renglon4;     
-    background-color: rgb(65, 140, 158);
+    grid-area: renglon4;   
+    background-color: map-get($styles, color2);  
+    /*background-color: rgb(65, 140, 158);*/
  }
  .renglon5 {
-    grid-area: renglon5;     
-    background-color: rgb(65, 140, 158);
+    grid-area: renglon5;   
+    background-color: map-get($styles, color2);  
+    /*background-color: rgb(65, 140, 158);*/
  }
 
  
@@ -103,7 +119,7 @@ iframe {
  .imagen_academico{
    /* height: 70px;
     width: 70px;*/
-    width: 6rem;
+    width: map-get($styles, ancho2);
    }
 
    .grid4{

@@ -1,19 +1,18 @@
 .imagen{
   /*display: inline;*/
-  margin-top: 20px;
-  margin-left: 60px;
-  padding: 1px;
+  @include margins(20px, 60px);
+  padding: map-get($styles, padding1);
   position: relative;
   display: inline-block;
  /* text-align: center;*/
 
     .imagen_contacto{
-      width: 20rem;
+      @extend .imagen;
+      width: map-get($styles, ancho3);
       grid-area: imagen_contacto;
     }
 
  }
-
 
 
 input{
@@ -21,13 +20,17 @@ input{
 }
 
 form input{
-  background-color: #c5c7d1;
-  outline-color: #cc203d;
+  background-color: map-get($styles, blanco);
+  outline-color: map-get($styles, rojo);
+}
+
+#inicio{
+  @include flex-row-center(flex, row, left);
 }
 
 form input:focus{
-  background-color: #c5c7d1;
-  outline-color: #cc203d;
+ @extend input;
+ outline-color: map-get($styles, rojo);
 }
 
 .formulario{
@@ -62,8 +65,8 @@ footer {
 
 .imagen_contacto{
   /* width: 200px;*/
-  width:5rem;
- }
+  width: map-get($styles, ancho4);
+}
 
  .grid6{
   grid-template-columns: 2fr 0.8fr;

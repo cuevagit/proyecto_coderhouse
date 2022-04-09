@@ -1,14 +1,14 @@
 .imagen{
    /*display: inline;*/
-   margin-top: 20px;
-   margin-left: 60px;
-   padding: 1px;
+   @include margins(20px, 60px);
+   padding: map-get($styles, padding1);
    position: relative;
    display: inline-block;
   /* text-align: center;*/
 
          &__preinscripcion {
-           width: 20rem;
+           @extend .imagen;
+           width: map-get($styles, ancho3);
            grid-area: imagen__preinscripcion;     
         }
 
@@ -50,6 +50,10 @@
 
  .preinscripcion{
     font-size: 1.2em;
+ }
+
+ #inicio{
+   @include flex-row-center(flex, row, left);
  }
 
  

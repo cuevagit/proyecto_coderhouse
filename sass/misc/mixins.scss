@@ -1,0 +1,10 @@
+@mixin margins($top:20px, $left:60px) {
+    margin-top: $top;
+    margin-left: $left;
+ }
+ 
+ @mixin flex-row-center($display:flex, $direccion:row, $posicion:left) {
+	display:$display;
+	flex-direction:$direccion;
+	justify-content:$posicion;
+}
