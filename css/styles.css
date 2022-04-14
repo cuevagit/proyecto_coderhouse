@@ -222,14 +222,15 @@ footer {
     font-size: .48em; }
   .parrafo, .parrafo .escuela {
     /*background-color: #a8eb12;*/
-    font-size: 2em;
     text-align: justify;
     text-align: justify;
-    font-size: 1.5em;
+    font-size: 0.9em;
+    /*font-size: 1px;*/
     padding: 20px; }
   .escuela {
     text-align: justify;
-    font-size: 0.2em; } }
+    font-size: 0.2em;
+    font-size: 3px; } }
 
 .imagen, .imagen_autoridades, .imagen .imagen_contacto, .imagen__preinscripcion {
   /*display: inline;*/
