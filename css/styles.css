@@ -299,7 +299,7 @@ a {
   flex-direction: row;
   left: 2.7cm;
   position: relative;
-  margin-left: 120px;
+  margin-left: 60px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
   .titulo:hover {
     background-color: #12ebc7;
@@ -310,7 +310,7 @@ a {
   position: absolute;
   width: "100px";
   /*height: "50px";*/
-  margin-left: 120px; }
+  margin-left: 60px; }
 
 #inicio {
   display: inline-flex;
