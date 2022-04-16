@@ -182,12 +182,17 @@ footer {
 
 .imagen, .imagen_autoridades, .imagen .imagen_contacto, .imagen__preinscripcion {
   /*display: inline;*/
-  margin-top: 20px;
+  margin-top: 40px;
   margin-left: 60px;
   padding: 1px;
   position: relative;
   display: inline-block;
   /* text-align: center;*/ }
+
+.imagen_escuela {
+  /*display: inline;*/
+  margin-top: 40px;
+  margin-left: 60px; }
 
 .parrafo, .parrafo .escuela {
   /*background-color: #a8eb12;*/
@@ -217,6 +222,8 @@ footer {
   .imagen_escuela {
     margin-top: 10px;
     width: 20rem; }
+  .footer2 {
+    top: 250px; }
   .grid2 {
     /*grid-template-columns: .05fr;*/
     font-size: .48em; }

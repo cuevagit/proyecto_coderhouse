@@ -1,11 +1,16 @@
 .imagen{
     /*display: inline;*/
-    @include margins(20px, 60px);
+    @include margins(40px, 60px);
     padding: map-get($styles, padding1);
     position: relative;
     display: inline-block;
    /* text-align: center;*/
    }
+
+
+   .imagen_escuela{  /*display: inline;*/
+       @include margins(40px, 60px);
+    }
 
 .parrafo{
     /*background-color: #a8eb12;*/
@@ -47,7 +52,11 @@
  .imagen_escuela{
    margin-top: 10px;
    width: map-get($styles, ancho3);
-}
+  }
+
+  .footer2{
+     top: 250px;
+  }
 
 .grid2{
    /*grid-template-columns: .05fr;*/
