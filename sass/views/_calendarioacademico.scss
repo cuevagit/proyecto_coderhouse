@@ -19,6 +19,9 @@
      &_academico{
       /*@extend .imagen;*/
       width: map-get($styles, ancho);
+      animation-duration: 5s;
+      animation-name: aparecer;
+      animation-iteration-count: 1;
      }
 
    }
@@ -57,7 +60,6 @@ iframe {
     grid-area: titulo4;
     background-color: map-get($styles, color);     
     /*background-color: rgb(86, 90, 102);*/
- 
  }
  
  .titulo5 {
@@ -70,27 +72,32 @@ iframe {
  .renglon1 {
     grid-area: renglon1;    
     background-color: map-get($styles, color2); 
+    height: map-get($styles, altura); 
     /*background-color: rgb(65, 140, 158);*/
  }
  
  .renglon2 {
     grid-area: renglon2;     
     background-color: map-get($styles, color2);
+    height: map-get($styles, altura); 
    /* background-color: rgb(65, 140, 158);*/
  }
  .renglon3 {
     grid-area: renglon3;     
     background-color: map-get($styles, color2);
+    height: map-get($styles, altura); 
     /*background-color: rgb(65, 140, 158);*/
  }
  .renglon4 {
     grid-area: renglon4;   
-    background-color: map-get($styles, color2);  
+    background-color: map-get($styles, color2); 
+    height: map-get($styles, altura);  
     /*background-color: rgb(65, 140, 158);*/
  }
  .renglon5 {
     grid-area: renglon5;   
-    background-color: map-get($styles, color2);  
+    background-color: map-get($styles, color2);
+    height: map-get($styles, altura);   
     /*background-color: rgb(65, 140, 158);*/
  }
 
@@ -106,10 +113,10 @@ iframe {
     "footer footer footer footer footer footer"
     ;
   /* grid-template-rows: 1fr 10fr 1fr 10fr; */
-  grid-template-rows: 50px 100px 30px 40px auto auto;
+  grid-template-rows: 50px 100px 30px 80px 300px 10px;
   grid-template-columns:  2fr 2fr 2fr 2fr 2fr 2fr;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
+ /* grid-row-gap: 1px;*/
+  grid-column-gap: 5px;
   /* height: 100vh;*/
   margin: 0;	
 }
@@ -117,15 +124,57 @@ iframe {
  @media screen and (max-width: 860px){
 
  .imagen_academico{
-   /* height: 70px;
-    width: 70px;*/
-    width: map-get($styles, ancho2);
+   height: map-get($styles, alturacalendario);
+   width: map-get($styles, ancho2);
    }
 
    .grid4{
        /* grid-template-columns: 0.8fr 0.8fr;*/
+        grid-template-rows: 60px 50px 15px 50px 250px auto;
         font-size: .48em;
      }
+
+     .titulo1 {
+      height: map-get($styles, alturaquery); 
+   }
+   
+   .titulo2 {
+      height: map-get($styles, alturaquery); 
+   }
+   
+   .titulo3 {
+      height: map-get($styles, alturaquery); 
+   }
+   
+   .titulo4 {
+      height: map-get($styles, alturaquery); 
+   }
+   
+   .titulo5 {
+      height: map-get($styles, alturaquery); 
+   }
+
+
+   .renglon1 {
+      height: map-get($styles, alturaquery); 
+   }
+   
+   .renglon2 {
+      height: map-get($styles, alturaquery); 
+   }
+
+   .renglon3 {
+      height: map-get($styles, alturaquery); 
+   }
+
+   .renglon4 {
+      height: map-get($styles, alturaquery); 
+   }
+
+   .renglon5 {
+      height: map-get($styles, alturaquery); 
+   }
+
    }
 
 

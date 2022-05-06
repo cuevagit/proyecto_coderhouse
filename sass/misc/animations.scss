@@ -1,6 +1,9 @@
 body{
     background-image: linear-gradient(to right top, #8f9ea5, #004d7a, #008793, #00bf72, #a8eb12) !important;
- }
+  /*  background-image: url("aula.jpg");
+    background-repeat: repeat;
+    background-color: #cccccc;*/
+}
 
  a:hover{
     color: rgb(24, 79, 150);
@@ -9,3 +12,13 @@ body{
 .carousel-item{
     margin-left: 500;
 }
+
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ 

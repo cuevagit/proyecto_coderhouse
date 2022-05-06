@@ -1,5 +1,8 @@
 body {
-  background-image: linear-gradient(to right top, #8f9ea5, #004d7a, #008793, #00bf72, #a8eb12) !important; }
+  background-image: linear-gradient(to right top, #8f9ea5, #004d7a, #008793, #00bf72, #a8eb12) !important;
+  /*  background-image: url("aula.jpg");
+    background-repeat: repeat;
+    background-color: #cccccc;*/ }
 
 a:hover {
   color: #184f96; }
@@ -7,7 +10,13 @@ a:hover {
 .carousel-item {
   margin-left: 500; }
 
-.imagen, .imagen_autoridades, .imagen .imagen_contacto, .imagen__preinscripcion {
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.imagen, .imagen_autoridades, .imagen_contacto, .imagen__preinscripcion {
   /*display: inline;*/
   margin-top: 20px;
   margin-left: 60px;
@@ -17,7 +26,10 @@ a:hover {
   /* text-align: center;*/ }
   .imagen_autoridades {
     width: 20rem;
-    grid-area: imagen_autoridades; }
+    grid-area: imagen_autoridades;
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: 1; }
 
 @media screen and (max-width: 768px) {
   .imagen_autoridades {
@@ -33,7 +45,7 @@ a:hover {
   flex-direction: row;
   justify-content: left; }
 
-.imagen, .imagen_autoridades, .imagen .imagen_contacto, .imagen__preinscripcion {
+.imagen, .imagen_autoridades, .imagen_contacto, .imagen__preinscripcion {
   /*display: inline;*/
   margin-top: 20px;
   margin-left: 60px;
@@ -43,7 +55,10 @@ a:hover {
   /* text-align: center;*/ }
   .imagen_academico {
     /*@extend .imagen;*/
-    width: 12rem; }
+    width: 12rem;
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: 1; }
 
 iframe {
   grid-area: iframe;
@@ -81,49 +96,74 @@ iframe {
 .renglon1 {
   grid-area: renglon1;
   background-color: #418c9e;
+  height: 50px;
   /*background-color: rgb(65, 140, 158);*/ }
 
 .renglon2 {
   grid-area: renglon2;
   background-color: #418c9e;
+  height: 50px;
   /* background-color: rgb(65, 140, 158);*/ }
 
 .renglon3 {
   grid-area: renglon3;
   background-color: #418c9e;
+  height: 50px;
   /*background-color: rgb(65, 140, 158);*/ }
 
 .renglon4 {
   grid-area: renglon4;
   background-color: #418c9e;
+  height: 50px;
   /*background-color: rgb(65, 140, 158);*/ }
 
 .renglon5 {
   grid-area: renglon5;
   background-color: #418c9e;
+  height: 50px;
   /*background-color: rgb(65, 140, 158);*/ }
 
 .grid4 {
   display: grid;
   grid-template-areas: "header header header header header header" "nav nav nav nav nav nav" "titulo1 titulo2 titulo3 titulo4 titulo5 imagen_academico" "renglon1 renglon2 renglon3 renglon4 renglon5 imagen_academico" "iframe iframe iframe iframe iframe iframe" "footer footer footer footer footer footer";
   /* grid-template-rows: 1fr 10fr 1fr 10fr; */
-  grid-template-rows: 50px 100px 30px 40px auto auto;
+  grid-template-rows: 50px 100px 30px 80px 300px 10px;
   grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
+  /* grid-row-gap: 1px;*/
+  grid-column-gap: 5px;
   /* height: 100vh;*/
   margin: 0; }
 
 @media screen and (max-width: 860px) {
   .imagen_academico {
-    /* height: 70px;
-    width: 70px;*/
+    height: 45px;
     width: 6rem; }
   .grid4 {
     /* grid-template-columns: 0.8fr 0.8fr;*/
-    font-size: .48em; } }
+    grid-template-rows: 60px 50px 15px 50px 250px auto;
+    font-size: .48em; }
+  .titulo1 {
+    height: 25px; }
+  .titulo2 {
+    height: 25px; }
+  .titulo3 {
+    height: 25px; }
+  .titulo4 {
+    height: 25px; }
+  .titulo5 {
+    height: 25px; }
+  .renglon1 {
+    height: 25px; }
+  .renglon2 {
+    height: 25px; }
+  .renglon3 {
+    height: 25px; }
+  .renglon4 {
+    height: 25px; }
+  .renglon5 {
+    height: 25px; } }
 
-.imagen, .imagen_autoridades, .imagen .imagen_contacto, .imagen__preinscripcion {
+.imagen, .imagen_autoridades, .imagen_contacto, .imagen__preinscripcion {
   /*display: inline;*/
   margin-top: 20px;
   margin-left: 60px;
@@ -131,9 +171,20 @@ iframe {
   position: relative;
   display: inline-block;
   /* text-align: center;*/ }
-  .imagen .imagen_contacto, .imagen_autoridades .imagen_contacto, .imagen__preinscripcion .imagen_contacto {
+  .imagen_contacto {
     width: 20rem;
-    grid-area: imagen_contacto; }
+    grid-area: imagen_contacto;
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: 1; }
+
+label {
+  color: #9aa4b3;
+  vertical-align: top; }
+
+textarea {
+  align-items: flex-end;
+  vertical-align: top; }
 
 input, form input:focus {
   accent-color: #721227; }
@@ -151,8 +202,9 @@ form input:focus {
   outline-color: #cc203d; }
 
 .formulario {
-  display: inline-block;
-  grid-area: formulario; }
+  /*display: inline-block;*/
+  grid-area: formulario;
+  padding-left: 70px; }
 
 .grid6 {
   display: grid;
@@ -169,18 +221,18 @@ nav {
 footer {
   grid-area: footer; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .imagen_contacto {
     /* width: 200px;*/
     width: 5rem; }
   .grid6 {
-    grid-template-columns: 2fr 0.8fr;
-    grid-template-rows: 55px 2fr 300px 500px;
-    font-size: .47em; }
+    grid-template-columns: 4fr 0.5fr;
+    grid-template-rows: 55px 2fr 350px 100px;
+    font-size: .55em; }
   .formulario {
     font-size: 1.2em; } }
 
-.imagen, .imagen_autoridades, .imagen .imagen_contacto, .imagen__preinscripcion {
+.imagen, .imagen_autoridades, .imagen_contacto, .imagen__preinscripcion {
   /*display: inline;*/
   margin-top: 40px;
   margin-left: 60px;
@@ -192,13 +244,18 @@ footer {
 .imagen_escuela {
   /*display: inline;*/
   margin-top: 40px;
-  margin-left: 60px; }
+  margin-left: 60px;
+  left: 20px;
+  animation-duration: 5s;
+  animation-name: aparecer;
+  animation-iteration-count: 1; }
 
 .parrafo, .parrafo .escuela {
   /*background-color: #a8eb12;*/
   font-size: 1em;
   text-align: justify;
-  grid-area: parrafo; }
+  grid-area: parrafo;
+  left: 200; }
   .parrafo .escuela {
     text-align: center; }
 
@@ -239,7 +296,7 @@ footer {
     font-size: 0.2em;
     font-size: 3px; } }
 
-.imagen, .imagen_autoridades, .imagen .imagen_contacto, .imagen__preinscripcion {
+.imagen, .imagen_autoridades, .imagen_contacto, .imagen__preinscripcion {
   /*display: inline;*/
   margin-top: 20px;
   margin-left: 60px;
@@ -249,7 +306,10 @@ footer {
   /* text-align: center;*/ }
   .imagen__preinscripcion {
     width: 20rem;
-    grid-area: imagen__preinscripcion; }
+    grid-area: imagen__preinscripcion;
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: 1; }
 
 .preinscripcion {
   grid-area: preinscripcion; }
@@ -262,7 +322,8 @@ footer {
   grid-template-columns: 1fr 1fr; }
 
 .parrafo_reducido {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify; }
 
 @media screen and (max-width: 768px) {
   .imagen__preinscripcion {
@@ -282,7 +343,8 @@ footer {
 body {
   /*background-color: rgb(158, 173, 185);*/
   /*display: flex;*/
-  min-height: 100vh; }
+  min-height: 100vh;
+  /* background-image: url("/img/preinscripcion.jpg");*/ }
 
 @media screen and (max-width: 768px) {
   .navbar {

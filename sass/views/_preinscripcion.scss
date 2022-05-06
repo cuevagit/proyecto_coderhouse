@@ -9,7 +9,10 @@
          &__preinscripcion {
            @extend .imagen;
            width: map-get($styles, ancho3);
-           grid-area: imagen__preinscripcion;     
+           grid-area: imagen__preinscripcion;   
+           animation-duration: 5s;
+           animation-name: aparecer;
+           animation-iteration-count: 1;  
         }
 
   }
@@ -33,6 +36,7 @@
 
  .parrafo_reducido{  
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: justify;
   }  
 
   @media screen and (max-width: 768px){
@@ -50,7 +54,7 @@
 
  .preinscripcion{
     font-size: 1.2em;
- }
+}
 
  #inicio{
    @include flex-row-center(flex, row, left);

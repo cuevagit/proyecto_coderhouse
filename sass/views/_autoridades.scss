@@ -10,8 +10,13 @@
          @extend .imagen;
          width: map-get($styles, ancho3);
          grid-area: imagen_autoridades;     
+         animation-duration: 5s;
+         animation-name: aparecer;
+         animation-iteration-count: 1;
+
        }
    }
+   
    
 
    @media screen and (max-width: 768px){

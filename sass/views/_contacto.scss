@@ -6,14 +6,26 @@
   display: inline-block;
  /* text-align: center;*/
 
-    .imagen_contacto{
+    &_contacto{
       @extend .imagen;
       width: map-get($styles, ancho3);
       grid-area: imagen_contacto;
+      animation-duration: 5s;
+      animation-name: aparecer;
+      animation-iteration-count: 1;
     }
 
  }
 
+label{
+  color: rgb(154, 164, 179);
+  vertical-align: top;
+}
+
+textarea{
+  align-items: flex-end;
+  vertical-align: top;
+}
 
 input{
     accent-color: #721227;
@@ -34,8 +46,9 @@ form input:focus{
 }
 
 .formulario{
-  display: inline-block;
-  grid-area: formulario;     
+  /*display: inline-block;*/
+  grid-area: formulario;  
+  padding-left: 70px ;
  }  
 
  
@@ -51,7 +64,6 @@ form input:focus{
  grid-template-columns:  1fr 1fr ;
 }
 
-
 header {
   grid-area: header; }
 
@@ -61,7 +73,9 @@ nav {
 footer {
       grid-area: footer; }
 
-@media screen and (max-width: 768px){
+
+
+@media screen and (max-width: 850px){
 
 .imagen_contacto{
   /* width: 200px;*/
@@ -69,9 +83,9 @@ footer {
 }
 
  .grid6{
-  grid-template-columns: 2fr 0.8fr;
-  grid-template-rows: 55px 2fr 300px 500px ;
-  font-size: .47em;
+  grid-template-columns: 4fr 0.5fr;
+  grid-template-rows: 55px 2fr 350px 100px ;
+  font-size: .55em;
 }
 
 .formulario{
