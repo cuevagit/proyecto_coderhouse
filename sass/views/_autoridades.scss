@@ -19,9 +19,9 @@
    
    
 
-   @media screen and (max-width: 768px){
-
+   @media screen and (max-width: 860px){
+    
  .imagen_autoridades{
-  width: map-get($styles, ancho4);
+  width: map-get($styles, ancho);
  }
 }

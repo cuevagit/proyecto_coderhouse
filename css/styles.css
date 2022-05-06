@@ -31,9 +31,9 @@ a:hover {
     animation-name: aparecer;
     animation-iteration-count: 1; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 860px) {
   .imagen_autoridades {
-    width: 5rem; } }
+    width: 12rem; } }
 
 * {
   border-style: border-box;
