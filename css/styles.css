@@ -279,10 +279,10 @@ footer {
   flex-direction: row;
   justify-content: left; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .imagen_escuela {
-    margin-top: 10px;
-    width: 20rem; }
+    margin-top: 100px;
+    width: 300px; }
   .footer2 {
     top: 250px; }
   .grid2 {
@@ -329,9 +329,9 @@ footer {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: justify; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 790px) {
   .imagen__preinscripcion {
-    width: 10rem; }
+    width: 15rem; }
   .grid5 {
     /* grid-template-columns: 0.8fr 0.8fr;*/
     grid-template-columns: 1fr 1fr;

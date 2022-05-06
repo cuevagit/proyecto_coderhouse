@@ -54,11 +54,12 @@
    @include flex-row-center(flex, row, left);
  }
 
- @media screen and (max-width: 768px){
+
+ @media screen and (max-width: 1200px){
 
  .imagen_escuela{
-   margin-top: 10px;
-   width: map-get($styles, ancho3);
+   margin-top: 100px;
+   width: map-get($styles, anchoesc);
   }
 
   .footer2{
